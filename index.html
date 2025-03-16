@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MFitness reponsive webite build using HTML5, CSS3 and Javascript The complete layout of the page is build using grid layout and flexbox with some cool animations." />
+    <title>MFitness - place for your fitness goals</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <style>
+        .contact-container {
+            text-align: center;
+            background-color: #EEEEEE;
+            padding: 10px;
+            border-radius: 14px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 3px;
+        }
+        .contact-container a {
+            display: inline-block;
+            margin: 10px;
+            padding: 18px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 17.5px;
+        }
+        .contact-container .gmail {
+            background-color: #D44638;
+        }
+        .contact-container .gmail:hover {
+            background-color: #c0392b;
+        }
+        .contact-container .whatsapp {
+            background-color: #25D366;
+        }
+        .contact-container .whatsapp:hover {
+            background-color: #1da851;
+        }
+        .contact-container img {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="home">
+        <div class="container">
+            <nav class="header-navigation" aria-label="navigation">
+                <div class="logo"><span class="yellow">GYM </span>Mustika Fitness Centre</div>
+
+                <img src="img/nav-icon.svg" alt="navigation icon" class="nav-icon" width="30" height="30" />
+
+                <ul>
+                    <li><a href="/gymmustika/index.html">Home</a></li>
+                    <li><a href="#contact">Hubungi</a></li>
+                    <li><a href="menulogin/index.php">Login Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="section-hero">
+            <div class="container hero-box">
+                <div class="hero-content margin-bottom">
+                    <h1 class="heading heading--1 margin-bottom">"No Pain No Gain - Tiada hasil tanpa Usaha."</h1>
+                    <p class="description">
+                        Buka mulai hari senin s/d minggu - [Pukul 07.00 - 11.00] Buka lagi [Pukul 15.00 - 21.00] WIB
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION ABOUT -->
+        <section class="section-about" id="about">
+            <div class="about-box container">
+                <div class="about-box__content" data-aos="fade-up">
+                    <h3 class="heading heading--3">Tentang <span class="yellow">GYM </span>Mustika Fitness Centre</h3>
+                    <p style="text-align: justify;">
+                        Pusat kebugaran yang bernama Gym Mustika Fitness Centre yang terletak di Jl. Panglima Sudirman No.1,
+                        Ngambak, Beru, Kec. Wlingi, Kabupaten Blitar adalah sebagai salah satu gym yang berdiri di
+                        tengah-tengah masyarakat hampir sepuluh tahun lamanya beroperasi.
+                    </p>
+                    <p style="text-align: justify;">
+                        Selain tempatnya yang strategis dan cukup luas, peralatan angkat beban yang digunakan disana cukup
+                        lengkap atau bervariasi dan terawat mulai dari Cable crossover machine, Chest press machine,
+                        Lat pulldown machine, Leg press machine, Bench press, Treadmill, Rowing machine, dll.
+                    </p>
+                    <p style="text-align: justify;">
+                        Berikut gambar disamping adalah beberapa suasana dan aktivitas pada tempat GYM Mustika Fitness Centre. &#9755;
+                    </p>
+                </div>
+                <figure class="about-box__image" data-aos="fade-up">
+                    <img src="img/gymwlingi-1.jpg" alt="about-image-one" width="350" height="233" />
+                    <img src="img/gymwlingi-2.jpg" alt="about-image-twwo" width="350" height="233" />
+                    <img src="img/gymwlingi-3.jpg" alt="about-image-three" width="420" height="280" />
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section class="section-contact" id="contact">
+            <form class="form-grp" data-aos="fade-up">
+                <center>
+                    <h2 class="heading heading--2 margin-bottom">Kontak <span class="yellow">Developer</span></h2>
+                </center>
+                <div class="contact-container">
+                    <a href="mailto:zidhanhadi4@gmail.com" class="gmail">
+                        <img src="img/gmail-logo.png" alt="Hubungi via Gmail" />
+                    </a>
+                    <a href="https://wa.me/+6282237430675" class="whatsapp">
+                        <img src="img/whatsapp-logo.png" alt="Hubungi via WhatsApp" />
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section-footer" id="footer">
+        <div class="footer-box container">
+            <div class="contact-details">
+                <h2 class="margin-bottom"><span class="yellow">GYM </span>Mustika Fitness Centre</h2>
+                <ul class="contact-data">
+                    <li class="location">Jl. Panglima Sudirman No.1, Ngambak, Beru, Kec. Wlingi, Kab. Blitar, Jawa Timur, 66184.</li>
+                    <li class="social">
+                        <img src="./img/logo-whatsapp.svg" alt="whatsapp icon" width="35" height="35" />
+                        <img src="./img/logo-instagram.svg" alt="instagram icon" width="35" height="35" />
+                    </li>
+                </ul>
+            </div>
+            <div class="legel">
+                <b><p class="text">Project &copy; 2024 - By zidhanhadi&nbsp;</p></b>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
